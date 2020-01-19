@@ -50,7 +50,7 @@ cons
 - faster
 - guranteed portability
 
-![](https://github.com/PushpikaWan/Docker-Learnings_and_Examples/master/assets/01.hypervisor_vs_container.png)
+![hypervisor_vs_container](https://github.com/PushpikaWan/Docker-Learnings_and_Examples/blob/master/assets/01.hypervisor_vs_container.png)
 
 ### docker deamon
 - is a docker server
@@ -161,6 +161,11 @@ ADD abc.txt /src/abc.txt
 
 ### Upload image to docker hub
 - need to create image with ```<dockerhubuserid>/<imagename> ```
+- need to login docker hub account in terminal and push
+~~~
+docker login --username=pushpikawan
+docker push <image_name>:<tag>
+~~~
 
 ** do not use default tag. It is not updated when new version pushed to repo. Therfore use specific version
 
